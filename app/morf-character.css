@@ -1,4 +1,4 @@
-/* Morf: an articulated ceramic shell, a graphite chassis, one amber optic. */
+/* dude: an articulated ceramic shell, a graphite chassis, one amber optic. */
 .morf-character{--morf-size:74px;--edge:calc(var(--morf-size)*.62);--half:calc(var(--edge)/2);--gap:1.4px;--optic:#efa345;display:inline-block;width:var(--morf-size);height:var(--morf-size);position:relative;vertical-align:middle;flex:none;perspective:400px;isolation:isolate;pointer-events:none}
 .morf-character--small{--morf-size:32px;--gap:.7px}
 .morf-character *{box-sizing:border-box}

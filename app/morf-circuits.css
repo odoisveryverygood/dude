@@ -1,4 +1,4 @@
-/* The existing circuit workbench, using Morf's shared warm material palette. */
+/* The existing circuit workbench, using dude's shared warm material palette. */
 .editor-app.morf-circuits{
   --bg:var(--flare-canvas);--stage:var(--flare-canvas);--ink:var(--morf-ink);
   --ink2:#70583f;--ink3:#806b54;--line:var(--morf-line);--line2:#dfc7a5;

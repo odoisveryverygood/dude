@@ -1,13 +1,13 @@
-# Morf
+# dude
 
 **See what's inside. Shape what's next.**
 
-Morf is a conversational 3D workspace for exploring physical objects, editing their parts, and checking proposed changes. Ask a question, select a component, or describe a modification: Morf connects the conversation to the assembly on screen.
+dude is a conversational 3D workspace for exploring physical objects, editing their parts, and checking proposed changes. Ask a question, select a component, or describe a modification: dude connects the conversation to the assembly on screen.
 
 ## Explore, modify, verify
 
 - **Explore:** open the desktop computer, mechanical keyboard, sourced Corne keyboard study, or an imported GLB assembly. Select, isolate, hide, explode, orbit, and inspect individual parts.
-- **Studio:** generate a conceptual object with Gemini, edit components, ask contextual questions, and animate supported mechanisms. The mechanical Morf companion follows the object and points at relevant details.
+- **Studio:** generate a conceptual object with Gemini, edit components, ask contextual questions, and animate supported mechanisms. The mechanical dude companion follows the object and points at relevant details.
 - **Review:** render the actual geometry, ask Gemini to inspect it, and evaluate supported dimensional or motion requirements. Corrections retain before/after evidence; required deterministic checks govern acceptance.
 - **Circuits:** derive recognized electronic components from the Studio object, inspect their catalog pins, edit connections, and switch between 3D, illustration, and schematic views. Unknown pin mappings remain explicitly unresolved.
 - **Build and export:** follow the assembly and wiring guide; inspect or download Arduino firmware, project JSON, a bill of materials, and assembly instructions. Studio and linked Circuits edits share saved project history.
@@ -17,8 +17,8 @@ Morf is a conversational 3D workspace for exploring physical objects, editing th
 Use Node.js 24 or newer.
 
 ```bash
-git clone https://github.com/odoisveryverygood/morf.git
-cd morf
+git clone https://github.com/odoisveryverygood/dude.git
+cd dude
 npm ci
 cp .env.example .env.local
 # Add your server-side Gemini credentials to .env.local.
@@ -44,7 +44,7 @@ The **Parts library** adds supported sourced components with their provenance. *
 
 ## Documentation
 
-- [Morf identity and interaction](docs/MORF.md)
+- [dude identity and interaction](docs/MORF.md)
 - [Linked circuits, schematics, and shared history](docs/CIRCUITS.md)
 - [Parts catalog and source limits](docs/CATALOG.md)
 - [Measured edits](docs/MEASURED_EDITS.md) and [visual review](docs/QUALITY.md)
@@ -56,4 +56,4 @@ The **Parts library** adds supported sourced components with their provenance. *
 
 Create a feature branch from `main` and open a pull request. Team assignments: [generation reliability](docs/team/README_TEAMMATE_1.md), [motion verification](docs/team/README_TEAMMATE_2.md), and [independent evidence](docs/team/README_TEAMMATE_3.md).
 
-Morf reuses attributed code and assets from Anatomy, Etch, and the component sources listed in [THIRD_PARTY.md](THIRD_PARTY.md). Their original licenses and notices are included.
+dude reuses attributed code and assets from Anatomy, Etch, and the component sources listed in [THIRD_PARTY.md](THIRD_PARTY.md). Their original licenses and notices are included.

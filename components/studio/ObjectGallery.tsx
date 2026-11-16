@@ -18,7 +18,7 @@ export default function ObjectGallery(props: Props) {
   useEffect(() => { let alive = true; import('@/lib/studio/corne').then(module=>module.loadCorneReference()).then(reference=>{if(alive)setKeyboard(reference);}).catch(()=>{}); return () => { alive = false; }; }, []);
   return <section className="fx-gallery" aria-label="Explore objects">
     <div className="fx-gallery-copy">
-      <span className="fx-overline"><i/>MEET MORF. MAKE SENSE OF THINGS.</span>
+      <span className="fx-overline"><i/>MEET dude. MAKE SENSE OF THINGS.</span>
       <h1>See what’s inside.<br/><em>Shape what’s next.</em></h1>
       <p>Explore every part. Understand every connection.<br/>Describe a change. See a new possibility.</p>
       <form className="fx-create-form" onSubmit={event => { event.preventDefault(); props.onGenerate(); }}>

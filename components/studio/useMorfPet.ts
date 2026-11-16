@@ -123,7 +123,7 @@ export function useMorfPet(options:Options,actor:RefObject<HTMLDivElement|null>,
     const delta=event.shiftKey?40:12;
     const moves:Record<string,PetPoint>={ArrowLeft:{x:-delta,y:0},ArrowRight:{x:delta,y:0},ArrowUp:{x:0,y:-delta},ArrowDown:{x:0,y:delta}};
     const step=moves[event.key];if(!step)return;
-    event.preventDefault();event.stopPropagation();place({x:position.current.x+step.x,y:position.current.y+step.y});setNotice('Morf moved. This spot is saved.');
+    event.preventDefault();event.stopPropagation();place({x:position.current.x+step.x,y:position.current.y+step.y});setNotice('dude moved. This spot is saved.');
   }
   function consumeDragClick(){if(!suppressClick.current)return false;suppressClick.current=false;return true;}
   return {animations,dragging,emotion,notice,consumeDragClick,

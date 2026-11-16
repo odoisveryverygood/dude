@@ -26,7 +26,7 @@ export default function ConversationPanel({ document, entries, model, busy, onAs
     <div className="ds-chat-intro"><span><MorfFace small/></span><div className="ds-conversation-kicker">A CONVERSATION WITH YOUR OBJECT</div><h2>Every part has a purpose.</h2><p>Answers point to real parts in this scene. Describe a change to edit the assembly.</p><small><i/>{model || 'Gemini'}</small></div>
     {entries.length === 0 && <div className="ds-chat-suggestions">{prompts.map(text => <button disabled={busy} key={text} onClick={() => onAsk(text)}>{text}<ArrowUpRight size={14}/></button>)}</div>}
     <div aria-live="polite" aria-relevant="additions text">{entries.map((entry, i) => <div className={'ds-message ds-' + entry.role} key={i}>
-      {entry.role === 'assistant' && <span><MorfFace small/>MORF</span>}
+      {entry.role === 'assistant' && <span><MorfFace small/>dude</span>}
       <Answer text={entry.text}/>
       {!!entry.actions?.length && <div className="ds-scene-actions">{entry.actions.filter(a => a.type !== 'highlight').map((action, index) => <button key={index} onClick={() => onActions([action])} disabled={busy}>
         {action.type === 'animate' ? <Play size={12}/> : action.type === 'explode' ? <Layers3 size={12}/> : <Focus size={12}/>}

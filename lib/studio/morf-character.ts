@@ -9,5 +9,5 @@ export function morfActivity(activity:Activity):{mode:MorfMode;label:string}{
  if(activity.emotion==='happy')return {mode:'success',label:'ready'};
  if(activity.answer)return {mode:'explaining',label:'explaining'};
  if(activity.partName)return {mode:'pointing',label:'exploring'};
- return {mode:'idle',label:'morf'};
+ return {mode:'idle',label:'dude'};
 }

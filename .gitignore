@@ -13,3 +13,4 @@ coverage/
 docs/**/*.log
 docs/**/tests.txt
 docs/**/tests-final.txt
+.vercel
